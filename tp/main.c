@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "funciones.h"
 
 int main()
 {
@@ -27,12 +28,17 @@ int main()
         switch(opcionUsuario)
         {
         case 1:
-            printf("1. Ingresar 1er operando \n");
+            printf("    Ingresar 1er operando: ");
             scanf("%f",&numeroUno);
             break;
         case 2:
+            printf("    Ingresar 2do operando: ");
+            scanf("%f",&numeroDos);
             break;
         case 3:
+            printf("    Operaciones calculadas.\n");
+            int fact = funcionFactorial(numeroUno);
+             printf("el numero es %d",fact);
             break;
         case 4:
             break;
@@ -40,9 +46,11 @@ int main()
             seguir = 0;
             break;
         default:
+            printf("Opcion no valida. \n");
             break;
 
 
         }
-    }while(seguir)
+    }while(seguir);
+}
 
