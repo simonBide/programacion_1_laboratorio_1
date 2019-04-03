@@ -1,3 +1,7 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "funciones.h"
+
 float funcionSuma (float numeroUno,float numeroDos)
 {
    // float resultado = numeroDos + numeroUno;
@@ -25,11 +29,16 @@ float funcionDividir (float numeroUno,float numeroDos)
 }
 float funcionFactorial ( float numeroFloat )
 {
-    int acumulador = 0;
-    int numero = (int)numeroFloat;
-    for(int contador = 1 ;numero >= contador ;contador++)
-    {
-     acumulador += numero*contador;
-    }
-    return acumulador;
+    int resultado =1;
+    int  numero_entero = (int)numeroFloat;
+    int aux;
+
+     while(numero_entero != numeroFloat){
+        return -1;
+     }
+
+        for(aux = 1; aux <= numero_entero; aux++){
+            resultado = resultado * aux;
+     }
+return resultado;
 }

@@ -38,7 +38,13 @@ int main()
         case 3:
             printf("    Operaciones calculadas.\n");
             int fact = funcionFactorial(numeroUno);
-             printf("el numero es %d",fact);
+
+            //if(fact==-1)
+               // {
+                    //printf("no se puede hacer factorial de un numero con decimales \n");
+             //   }
+           // else printf("el numero es %d \n ",fact);
+
             break;
         case 4:
             break;
